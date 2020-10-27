@@ -6,32 +6,34 @@
     <title>Pago</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Pago</legend>
-        <ul>
-            <li class="input-card">
-                <label for="creditCard">Número de la tarjeta de crédito</label>
-                <abbr title="required" aria-label="required">*</abbr>
-                <input type="tel" id="creditCard" name="creditCard" maxlength="12" minlength="12" required />
-            </li>
-            <li class="input-card">
-                <label for="cardHolder">Nombre completo del titular</label>
-                <abbr title="required" aria-label="required">*</abbr>
-                <input type="text" id="cardHolder" name="cardHolder" required />
-            </li>
-            <li class="input-card">
-                <label for="cardDate">Vencimiento de la tarjeta</label>
-                <abbr title="required" aria-label="required">*</abbr>
-                <input type="number" id="cardDate" name="cardDateMonth" min="1" max="12" required />
-                <input type="number" id="cardDate" name="cardDateYear" min="2020" max="2030" required />
-            </li>
-            <li class="input-card">
-                <label for="cardCcv">Código de seguridad</label>
-                <abbr title="required" aria-label="required">*</abbr>
-                <input type="password" maxlength="3" id="cardCcv" name="cardCcv" required />
-            </li>
-        </ul>
-        <button type="submit">Pagar</button>
-    </fieldset>
+    <form>
+        <fieldset>
+            <legend>Pago</legend>
+            <ul>
+                <li class="input-card">
+                    <label for="creditCard">Número de la tarjeta de crédito</label>
+                    <abbr title="required" aria-label="required">*</abbr>
+                    <input type="tel" id="creditCard" name="creditCard" maxlength="12" minlength="12" required />
+                </li>
+                <li class="input-card">
+                    <label for="cardHolder">Nombre completo del titular</label>
+                    <abbr title="required" aria-label="required">*</abbr>
+                    <input type="text" id="cardHolder" name="cardHolder" required />
+                </li>
+                <li class="input-card">
+                    <label for="cardDate">Vencimiento de la tarjeta</label>
+                    <abbr title="required" aria-label="required">*</abbr>
+                    <input type="number" id="cardDate" name="cardDateMonth" min="1" max="12" required />
+                    <input type="number" id="cardDate" name="cardDateYear" min="2020" max="2030" required />
+                </li>
+                <li class="input-card">
+                    <label for="cardCcv">Código de seguridad</label>
+                    <abbr title="required" aria-label="required">*</abbr>
+                    <input type="password" maxlength="3" id="cardCcv" name="cardCcv" required />
+                </li>
+            </ul>
+            <button type="submit">Pagar</button>
+        </fieldset>
+    </form>
 </body>
 </html>
